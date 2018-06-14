@@ -4,11 +4,34 @@
     text-align: center;
 }
 
+.container {
+    padding: 60px;
+    position: relative;
+}
+
 .cone {
     width: 80px;
     
 }
 
-.container {
-    padding: 60px;
+p {
+    font-weight: 300;
+}
+
+.projects {
+    font-size: 1em;
+    color: white;
+    background-color: black;
+    -webkit-box-shadow: 3px 5px 0 #2082afb0;
+    -moz-box-shadow: 3px 5px 0 #2082afb0;
+    box-shadow: 3px 5px 0 #2082afb0;
+    border: 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.projects:hover {
+    -webkit-box-shadow: 0px 0px 0 #2082afb0;
+    -moz-box-shadow: 0px 0px 0 #2082afb0;
+    box-shadow: 0px 0px 0 #2082afb0;
 }
