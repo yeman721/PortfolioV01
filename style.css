@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.cone {
+    width: 80px;
+    
+}
+
+.container {
+    padding: 60px;
+}
