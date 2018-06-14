@@ -22,12 +22,13 @@ p {
     font-size: 1em;
     color: white;
     background-color: black;
-    -webkit-box-shadow: 3px 5px 0 #2082afb0;
-    -moz-box-shadow: 3px 5px 0 #2082afb0;
-    box-shadow: 3px 5px 0 #2082afb0;
+    -webkit-box-shadow: 3px 5px 0 #31beffb0;
+    -moz-box-shadow: 3px 5px 0 #31beffb0;
+    box-shadow: 3px 5px 0 #31beffb0;
     border: 0;
     padding: 10px;
     border-radius: 5px;
+    transition: 0.2s box-shadow, 0.2s -webkit-transform;
 }
 
 .projects:hover {
