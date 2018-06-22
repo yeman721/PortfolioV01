@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+.Loop {
+  position: relative;
+  height: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+section {
+  position: relative;
+  text-align: center;
+  height: 80%;
+  min-height: 300px;
+  max-height: 800px;
+}
+
+::scrollbar {
+  display: none;
+}
+
+.ccc {
+    height: 100vh;
+    background-color: #9fc279b8;
+}
+
+.cgsr {
+    height: 100vh;
+    background-color: #abc2c8;
+}
+
+.blue {
+    height: 100vh;
+    background-color: blue;
+}
+
+.btn {
+    font-size: 1em;
+    border: 0;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.2s box-shadow, 0.2s -webkit-transform;
+    -webkit-box-shadow: 3px 5px 0 #31beffb0;
+    -moz-box-shadow: 3px 5px 0 #31beffb0;
+    box-shadow: 3px 5px 0 #31beffb0;
+}
+
+.behance {
+    color: white;
+    background-color: black;
+}
+
+.medium {
+    color: black;
+    background-color: white;
+}
+
+.prototype {
+    background-color: #16324f;
+    color: white;
+}
+
+.btn:hover {
+    -webkit-box-shadow: 0px 0px 0 #2082afb0;
+    -moz-box-shadow: 0px 0px 0 #2082afb0;
+    box-shadow: 0px 0px 0 #2082afb0;
+}
+
+p {
+    margin: 0;
+}
+
+.cardimg {
+    padding-top: 80px;
+}
+
+h2 {
+    font-size: 1em;
+    font-weight: 900;
+}
+
+.heroimg {
+    position: relative;
+    width:650px;
+    margin: 0 auto;
+    padding-bottom: 200px;
+
+}
+
+.imac {
+    position:absolute;
+    top: 45px;
+    right: 11px;
+
+}
+
+
+@media screen and (max-width: 767px), (max-height: 730px) {
+    .heroimg {
+        width: 250px;
+        padding-bottom: 20vh;
+    }
+    .imac {
+        width: 250px;
+        top:65px;
+        right:2px;
+    }
+    .cardimg {
+        width: 235px;
+    }
+
+    section {
+        position: relative;
+        text-align: center;
+        height: 80%;
+        min-height: 300px;
+        max-height: 500px;
+      }
+
+}
+
+@media screen and (max-height: 376px) {
+    .cardimg {
+        padding-top:25px;
+    }
+    .imac {
+        top:10px;
+    }
+}
