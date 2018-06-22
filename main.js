@@ -1,3 +1,5 @@
+
+
 var doc = window.document,
   context = doc.querySelector('.js-loop'),
   clones = context.querySelectorAll('.is-clone'),
@@ -61,6 +63,10 @@ function scrollUpdate () {
 window.requestAnimationFrame(reCalc);
 
 context.addEventListener('scroll', function () {
+  window.requestAnimationFrame(scrollUpdate);
+}, false);
+
+context.addEventListener('touchmove', function () {
   window.requestAnimationFrame(scrollUpdate);
 }, false);
 
