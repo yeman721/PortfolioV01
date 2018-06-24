@@ -30,18 +30,16 @@ section {
 }
 
 .ccc {
-    height: 100vh;
-    background-color: #9fc279b8;
+    background-color: transparent;
 }
 
 .cgsr {
-    height: 100vh;
-    background-color: #abc2c8;
+    background-color: transparent;
 }
 
-.blue {
-    height: 100vh;
-    background-color: blue;
+
+.dot {
+    background-color: transparent;
 }
 
 .btn {
@@ -57,18 +55,21 @@ section {
 }
 
 .behance {
-    color: white;
-    background-color: black;
+    color: #3678ab;
+    background-color: transparent;
+    border: 1px solid #3678ab;
 }
 
 .medium {
-    color: black;
-    background-color: white;
+    color: #3678ab;
+    border: 1px solid #3678ab;
+    background-color: transparent;
 }
 
 .prototype {
-    background-color: #16324f;
-    color: white;
+    background-color: transparent;
+    border: 1px solid #3678ab;
+    color: #3678ab;
 }
 
 .btn:hover {
@@ -85,10 +86,15 @@ p {
     padding-top: 80px;
 }
 
+.dotCard {
+    padding-top: 50px;
+}
+
 h2 {
     font-size: 1.8em;
-    font-weight: 900;
-    padding: 0 30px;
+    font-weight: 600;
+    padding: 10px 30px;
+    color: #3678ab;
 }
 
 .heroimg {
@@ -99,6 +105,10 @@ h2 {
 
 }
 
+.dotImg {
+    padding-bottom: 145px;
+}
+
 .imac {
     position:absolute;
     top: 45px;
@@ -107,26 +117,72 @@ h2 {
 }
 
 header {
-    background: rgba(0, 0, 0, .5);
-}
-
-.static {
-}
-
-.top {
+    width: 100%;
+    /* background: rgba(16, 103, 161, 0.8); */
+    background: transparent;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    position: fixed;
+    left: 0;
+    z-index: 999;
 }
 
 .bottom {
-    position: fixed;
     bottom:0;
-    z-index: 100;
 }
 
+h1 {
+    padding: 10px 30px 10px 0px;
+    margin: 0;
+    font-size: 1em;
+    text-align: left;
+}
 
-@media screen and (max-width: 767px), (max-height: 730px) {
+h3 {
+    margin:0;
+    font-size: .6em;
+    font-weight: 300;
+    text-align: left;
+}
+
+.topShadow {
+    width: 110%;
+    height:100px;
+    position:fixed;
+    top: -100px;
+    left: -5%;
+    background: transparent;
+    box-shadow: 0px 30px 60px #3678ab; 
+    z-index: -10;
+}
+
+.btmShadow {
+    width: 110%;
+    height:100px;
+    position:fixed;
+    bottom: -100px;
+    left: -5%;
+    background: transparent;
+    box-shadow: 0px -5px 40px #3678ab; 
+    z-index: -10;
+}
+
+@media screen and (max-height: 960px) {
+    .heroimg {
+        padding-bottom: 130px;
+    }
+    .dotImg {
+        padding-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 767px), (max-height: 867px) {
     .heroimg {
         width: 250px;
         padding-bottom: 15vh;
+    }
+    .dotImg {
+        padding-bottom: 8vh;
     }
     .imac {
         width: 250px;
@@ -135,6 +191,10 @@ header {
     }
     .cardimg {
         width: 235px;
+    }
+
+    .btn {
+        font-size: .8em;
     }
 
     section {
@@ -151,9 +211,16 @@ header {
 
 }
 
-@media screen and (max-height: 376px) {
+@media screen and (max-height: 530px) {
     .cardimg {
         padding-top:25px;
+    }
+    .dotCard {
+        padding-top: 10px;
+    }
+    h2 {
+        margin:0;
+        font-weight: 400;
     }
     .imac {
         top:11px;
