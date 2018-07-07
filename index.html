@@ -9,21 +9,32 @@
     <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,400,900" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
-    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
     <link rel="stylesheet" type="text/css" media="screen" href="home.css" />
 
 </head>
 <body>
-<header>
-        <h1>Welcome to my Portfolio</h1>
+<header class="top">
+        <a href=""><h1>GARY YE | </h1><h1 style="font-weight: 200;">UI/UX Designer</h1></a> <a class="right" href="#Popup"><h1>&#9776;</h1></a>
 </header>
 <header class="bottom">
     <h3>Gary Ye 2018</h3>
 </header>
-<div class="topShadow">hello</div>
-<div class="btmShadow"> </div>
+<div id="Popup" class="Modal">
+        <div class="content">
+                <h4>Let's Connect!</h4>
+                <div class="contact-icons">
+                    <a href="https://www.linkedin.com/in/gary-ye/" target="_blank"><i class="fab fa-linkedin"></i><br>Linkedin</a>
+                    <a href="mailto:g.ye721@gmail.com"><i class="far fa-envelope"></i><br>Gmail</a>
+                    <a href="https://github.com/yeman721" target="_blank"><i class="fab fa-github"></i><br>Github</a>
+                </div>
+                <button class="btn medium cancel" href="#">Cancel</button>
+                <span class="close">     
+        </div>
+</div>
+<!-- <div class="topShadow"> </div>
+<div class="btmShadow"> </div> -->
 <main class="Loop js-loop">
     <section class="ccc">
         <div class="heroimg">
@@ -86,12 +97,7 @@
     </section>
 </main>
 
-
-
-
-
-
-
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="main.js"></script>
 </body>
 </html>
