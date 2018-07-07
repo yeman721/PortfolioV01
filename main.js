@@ -111,7 +111,7 @@ $.fn.expose = function(options) {
   
   $modal.add( $modal.find(".close") ).on("click", function(e) {
     
-    e.preventDefault();
+    //e.preventDefault();
     
     // if it isn't the background or close button, bail
     if( e.target !== this )
